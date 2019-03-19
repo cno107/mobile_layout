@@ -1,0 +1,16 @@
+/*PHB*/
+@basesize:100px;
+@basedev_width:750px;
+@dev_width:1024px,768px,475px,414px,320px,411px,360px,375px; //常用スマホwidthのarrary
+//@index:1;
+
+.remAdapter(@index) when (@index <= length(@dev_width)){
+  @media screen and (width:extract(@dev_width,@index)){
+    html{
+      font-size:extract(@dev_width,@index)/@basedev_width*@basesize;
+    }
+  }
+  .remAdapter(@index+1);
+}
+
+.remAdapter(1);

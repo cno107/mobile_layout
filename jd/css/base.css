@@ -1,0 +1,56 @@
+
+/*reset css*/
+*,
+::before,
+::after{
+    margin:0;
+    padding:0;
+    /*针对移动端*/
+    box-sizing:border-box;
+    -webkit-box-sizing: border-box; /*主流*/
+
+    /*click highlight clear*/
+    -webkit-tap-highlight-color:transparent;
+}
+body{
+    font-size:20px;
+    color:#333;
+    font-family:'Microsoft Yahei',sans-serif ;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#333333;
+}
+input,textarea{
+    outline:none;
+    resize:none;
+    border:none;
+     /*clear 移动端输入框特有的样式*/
+    -webkit-appearance:none;
+}
+
+
+
+/*common css*/
+.f_left{
+    float:left;
+}
+.f_right{
+    float:right;
+}
+/*clearfix*/
+.clearfix{
+    *zoom:1;
+}
+.clearfix:after{
+    content:'';display: block;clear:both;
+}
+
+/*bg sprite*/
+[class^='icon_'],[class*=' icon_']{
+    background:url('../img/sprites.png');
+    background-size:200px 200px;
+}

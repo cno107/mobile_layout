@@ -1,0 +1,118 @@
+html,
+body {
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+}
+#jd_category {
+  position: fixed;
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+}
+#jd_category header {
+  width: 100%;
+  height: 45px;
+  background-image: url("../img/header-bg.png");
+  background-size: 1px 44px ;
+  border-bottom: 1px solid black;
+  position: relative;
+  z-index: 2;
+}
+#jd_category header .head_l {
+  width: 40px;
+  height: 45px;
+  float: left;
+  padding: 12px 10px;
+  background-image: url("../img/sprites.png");
+  background-size: 200px 200px;
+  background-position: -20px 0;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+#jd_category header .head_r {
+  width: 40px;
+  height: 45px;
+  float: right;
+  padding: 12px 10px;
+  background-image: url("../img/sprites.png");
+  background-size: 200px 200px;
+  background-position: -59px 0;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+#jd_category header .head_m {
+  width: 100%;
+  height: 45px;
+  padding: 0  40px;
+}
+#jd_category header .head_m input {
+  width: 100%;
+  height: 30px;
+  padding-left: 3px;
+  line-height: 30px;
+  font-size: 15px;
+}
+#jd_category #content .content_l {
+  width: 90px;
+  background-color: #f3f4f6;
+  float: left;
+  position: relative;
+}
+#jd_category #content .content_l ul {
+  width: 90px;
+}
+#jd_category #content .content_l ul li {
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  line-height: 50px;
+  font-size: 15px;
+  text-align: center;
+}
+#jd_category #content .content_l ul li.now {
+  border-right: 0;
+}
+#jd_category #content .content_l ul li.now a {
+  color: #d8505c;
+}
+#jd_category #content .content_r {
+  height: 100%;
+  overflow: hidden;
+  padding: 5px 10px;
+}
+#jd_category #content .content_r .image {
+  width: 100%;
+}
+#jd_category #content .content_r .image img {
+  width: 100%;
+}
+#jd_category #content .content_r .se {
+  margin-bottom: 15px;
+}
+#jd_category #content .content_r .se h3 {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+#jd_category #content .content_r .se .goods {
+  width: 100%;
+}
+#jd_category #content .content_r .se .goods li {
+  width: 33.33333333%;
+  float: left;
+  text-align: center;
+  margin-bottom: 5px;
+}
+#jd_category #content .content_r .se .goods li a {
+  width: 100%;
+  height: 100%;
+}
+#jd_category #content .content_r .se .goods li a img {
+  width: 62px;
+  height: 62px;
+}
+#jd_category #content .content_r .se .goods li a p {
+  font-size: 12px;
+  color: #666;
+}

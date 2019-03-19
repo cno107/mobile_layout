@@ -1,0 +1,300 @@
+//版心容器
+//color:rgb(216, 80, 92);
+//border-right:2px solid rgb(224, 224, 224);
+body{
+  background-color:rgb(245,245,245);
+}
+.jd_container{
+ 
+  width:100%;
+  //设计稿640px 750px
+  //640px早期设计 iphone4
+  //750px现在主流设计 iphone6
+  max-width:640px;
+  min-width:320px;
+  margin:0 auto;
+
+
+ .jd_search{
+   //fixed基准浏览器宽度
+   position:fixed;
+   z-index:3;
+   left:0;top:0;
+   width:100%;
+   height:40px;
+
+   .jd_search_box{
+     position: relative;
+     width:100%;
+     height:100%;
+     max-width:640px;
+     min-width:320px;
+     margin:0 auto;
+     background-color:rgba(216,80,92,0);
+     a.icon_logo{
+
+       position:absolute;
+       top:3px;
+       left:5px;
+       width:60px;
+       height: 100%;
+       background-position: 0 -103px;
+       line-height:100%;
+     }
+     a.login{
+       position:absolute;
+       top:4px;
+       right:0;
+       width:85px;
+       height: 100%;
+       color:white;
+       font-size:20px;
+       //background-color:peru;
+     }
+     form{
+       position: relative;
+       width:100%;
+       padding-left:65px;
+       padding-right:85px;
+
+       input{
+         width:100%;
+         height:30px;
+         font-size: 20px;
+         margin-top:5px;
+         border-radius:15px;
+         padding-left:15px+20; //搜索图标宽度
+       }
+       span.icon_search{
+         display: inline-block;
+         position: absolute;
+         width:20px;
+         height:20px;
+         background-position: -60px -109px;
+         left:70px;
+         top:10px;
+
+       }
+     }
+   }
+ }
+ .jd_banner {
+
+   width: 100%;
+
+   .carousel {
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+     position: relative;
+     ul.page_wrap{
+       width:100%*10;
+
+       transform: translateX(-10%);
+       li.page {
+         width:100%/10;  //因为氟元素是1000%
+
+         float:left;
+
+
+         a{
+           width:100%;
+           height:100%;
+           display:block;
+           img{
+             width:100%;
+           }
+         }
+
+       }
+     }
+     ul.btn_wrap{
+       width: 100%;
+       position:absolute;
+       bottom:3px;left:0;
+
+       text-align: center;
+       li.btn{
+         display: inline-block;
+         width:8px;
+         height:8px;
+         border:2px white solid;
+         border-radius:4px;
+       }
+     }
+   }
+ }
+ .jd_nav{
+   background-color: #fff;
+   width:100%;
+   height:160px;
+   border-bottom:1px solid rgb(244,244,244);
+   ul.nav_block{
+     li{
+       width:100%/4;
+       height:80px;
+       float:left;
+       a{
+         display: inline-block;
+         width:100%;
+         height:100%;
+         text-align: center;
+         img{
+           display:block;
+           width:40px;
+           height:40px;
+           margin:3px auto;
+         }
+         span{
+           font-size:12px;
+           color:rgb(102,102,102);
+         }
+
+       }
+     }
+
+   }
+ }
+
+ .jd_product{
+   width: 100%;
+   background-color:transparent;
+   [class^="product_"]{
+     margin-top: 20px;
+     .top{
+       background-color: #fff;
+       width:100%;
+       height:32px;
+       padding-left:8px;
+       border-bottom:2px solid rgb(224, 224, 224);
+       position: relative;
+       h3::before{
+         float:left;
+           content:'';
+           height:18px;
+           width:4px;
+         background-color:rgb(216, 80, 92);
+         position:absolute;
+         top:6px;
+         left:8px;
+       }
+       span{
+         margin-left:10px;
+       }
+     }
+   }
+   .productFirst{
+     margin-top: 20px;
+     background-color:#fff;
+     .top{
+       width:100%;
+       height:32px;
+       border-bottom:2px solid rgb(224, 224, 224);
+       padding-left:8px;
+       padding-right:5px;
+       img{
+         margin-top:5px;
+         float:left;
+         width:16px;
+         height:20px;
+         margin-right:5px;
+       }
+       span.nokori{
+         float:left;
+         color:rgb(216, 80, 92);
+       }
+       span.right{
+         float:right;
+       }
+       div.time{
+         display:inline-block;
+
+         margin-top:6px;
+         margin-left:5px;
+         font-size:15px;
+         & > span{
+           float:left;
+           margin-right:3px;
+         }
+         :not(.colon){
+           width:18px;
+           height:18px;
+           color:white;
+           background:black;
+           line-height:18px;
+           text-align: center;
+         }
+
+       }
+     }
+     .box{
+
+       float:left;
+       width:100%/3;
+       margin-top:15px;
+       text-align: center;
+       margin-bottom:10px;
+
+       a{
+         display: inline-block;
+         width:100%;
+         border-right:2px solid rgb(224, 224, 224);
+       }
+       &:last-child{
+         border-right:none;
+       }
+       img{
+         width:64%;
+
+       }
+       & > p:nth-of-type(1){
+         color:rgb(216, 80, 92);
+       }
+     }
+   }
+   .product_2{
+     background-color: #fff;
+     .content{
+       width:100%;
+     }
+   }
+   .product_3{
+     background-color: #fff;
+     .content{
+       width:100%;
+
+     }
+   }
+   .product_4{
+     background-color: #fff;
+     .content{
+       width:100%;
+
+
+     }
+   }
+ }
+ }
+
+
+
+.now{
+  background-color: #fff;
+}
+//float布局组合
+.l{
+  width: 50%;
+  float:left;
+  img{
+    display:block;
+    width:100%;
+  }
+}
+.r{
+  width: 50%;
+  float:right;
+  img{
+    display:block;
+    width:100%;
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jd-list</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="css/category-iscroll.css"/>
+    <link type="text/css"  rel="stylesheet" href="css/base.css"/>
+
+</head>
+<body onload="loaded()">
+<div id="jd_category">
+    <header>
+        <a class="head_l"></a>
+        <a class="head_r"></a>
+        <form class="head_m">
+            <input type="text" placeholder="search">
+        </form>
+    </header>
+    <div id="content" class="clearfix">
+        <div class="content_l" id="wrapper">
+            <ul>
+                <li class=""><a href="javascript:;">热门推荐</a></li>
+                <li class="now"><a href="javascript:;">潮流女装</a></li>
+                <li class=""><a href="javascript:;">品牌男装</a></li>
+                <li class=""><a href="javascript:;">内衣配饰</a></li>
+                <li class=""><a href="javascript:;">家用电器</a></li>
+                <li class=""><a href="javascript:;">电脑办公</a></li>
+                <li class=""><a href="javascript:;">手机数码</a></li>
+                <li class=""><a href="javascript:;">母婴频道</a></li>
+                <li class=""><a href="javascript:;">图书</a></li>
+                <li class=""><a href="javascript:;">家居家纺</a></li>
+                <li class=""><a href="javascript:;">居家生活</a></li>
+                <li class=""><a href="javascript:;">家具建材</a></li>
+                <li class=""><a href="javascript:;">热门推荐</a></li>
+                <li class=""><a href="javascript:;">潮流女装</a></li>
+                <li class=""><a href="javascript:;">品牌男装</a></li>
+                <li class=""><a href="javascript:;">热门推荐</a></li>
+                <li class=""><a href="javascript:;">AAA</a></li>
+                <li class=""><a href="javascript:;">BBBB</a></li>
+                <li class=""><a href="javascript:;">CCCC</a></li>
+                <li class=""><a href="javascript:;">DDDD</a></li>
+                <li class=""><a href="javascript:;">EEEE</a></li>
+                <li class=""><a href="javascript:;">FFFF</a></li>
+                <li class=""><a href="javascript:;">HHHH</a></li>
+                <li class=""><a href="javascript:;">ZZZZ</a></li>
+
+            </ul>
+        </div>
+        <div class="content_r">
+            <div class="image"><img src="img/banner_1.png"></div>
+            <div class="se ">
+                <h3>タイムセール</h3>
+                <ul class="goods clearfix">
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                </ul>
+            </div>
+            <div class="se ">
+                <h3>タイムセール</h3>
+                <ul class="goods clearfix">
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                </ul>
+            </div>
+            <div class="se ">
+                <h3>タイムセール</h3>
+                <ul class="goods clearfix">
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                    <li><a href="javascript:;"><img src="img/nv-fy.jpg"><p>コート</p></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/iscroll.js"></script>
+<script>
+
+        var myScroll;
+
+        function loaded () {
+
+            myScroll = new IScroll('#wrapper', { scrollX: true, freeScroll: true });
+        }
+
+        // document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+        //     capture: false,
+        //     passive: false
+        // } : false);
+
+</script>
+</body>
+</html>
